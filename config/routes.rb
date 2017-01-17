@@ -107,15 +107,8 @@ Arima::Application.routes.draw do
   # forgot password
   resources :forgot_password
 
-  get 'country'	=> "country#index", as: :country
-
   # simple/static pages
-  get 'terms'   => "home#terms",   as: :terms
-  get 'privacy' => "home#privacy", as: :privacy
-  get 'credits' => "home#credits", as: :credits
   get 'about'   => "home#about",   as: :about
-  get 'faq'     => "home#faq",     as: :faq
-  get 'contact' => "home#contact", as: :contact
 
   # post 'submit_questions/create' => "submit_questions#create", as: :submit_question
 

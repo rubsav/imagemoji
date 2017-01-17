@@ -18,8 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if !params[:user]["location_attributes"].nil? then @location.country_code = params[:user]["location_attributes"]["country"] end
     if !params[:user]["location_attributes"].nil? then @location.country = Country.new(params[:user]["location_attributes"]["country"]).name end
     if !params[:user]["location_attributes"].nil? then @location.city = params[:user]["location_attributes"]["city"].strip.downcase.capitalize end
-    @user.save
-    @location.save
+    # @location.save
 
     #if(!@user.errors["email"].empty?)
     #  flash[:notice] = "Email " + @user.errors['email'].first
@@ -50,7 +49,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
           reward_referral(params[:referral]) if params[:referral].present?
 
           #UserMailer.signup_email(@user).deliver!
-          @winston = User.new(email: "winston@arima.io")
+          # @winston = User.new(email: "winston@arima.io")
           # UserMailer.signup_admin(@winston, @user).deliver!
           sign_in(:user, @user)
 
