@@ -27,7 +27,7 @@
 
       $('.mobile-q-new')[0].style.display = "block";
       $('.mobile-q-submit')[0].style.display = "block";
-      $('.g-recaptcha')[0].style.display = "block";
+      // $('.g-recaptcha')[0].style.display = "block";
     });
 
     // Make sure the add answer button is showing
@@ -444,7 +444,7 @@
 
   <div style="clear: both; margin-bottom: 20px;"></div>
 
-  <%= recaptcha_tags  class: "captcha captcha-mobile"%>
+  <%#= recaptcha_tags  class: "captcha captcha-mobile"%>
 
   <span class="modal-finished-container">
     <%= f.submit "Submit", class: "modal-finished-button mobile-q-submit", id: !params[:question].nil? ? "blue-button" : "orange-button" %>

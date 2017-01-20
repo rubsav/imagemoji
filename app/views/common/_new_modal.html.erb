@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('#question_group_id')[0].style.display = "block";
     $('.submit-q-container')[0].style.display = "block";
     $('.modal-finished-button')[0].style.display = "block";
-    $('.g-recaptcha')[0].style.display = "block";
+    // $('.g-recaptcha')[0].style.display = "block";
 
   });
 
@@ -83,7 +83,7 @@ $(document).ready(function() {
       $('#question_group_id')[0].style.display = "block";
       $('.submit-q-container')[0].style.display = "block";
       $('.modal-finished-button')[0].style.display = "block";
-      $('.g-recaptcha')[0].style.display = "block";
+      // $('.g-recaptcha')[0].style.display = "block";
     }else {
       window.alert("not valid");
     }
@@ -122,7 +122,7 @@ $(document).ready(function() {
         <div style="clear: both; margin-bottom: 20px;"></div>
 
         <span style="position: relative; left: 10px;">
-        <%= recaptcha_tags  class: "captcha"%>
+        <%#= recaptcha_tags  class: "captcha"%>
         </span>
 
         <span style="color: black; display:block;" id="divider">Or</span>
