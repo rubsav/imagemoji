@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 1.2'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.10'
 
+gem 'carrierwave', '~> 1.0'
+
 # Authentication library
 gem 'devise'
 
