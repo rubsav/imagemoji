@@ -13,7 +13,7 @@
   </section>
 
   <section class="right">
-    <%= link_to image_tag("logo-icon-large.png"), categories_path, id: "arima-icon" %>
+    <%= link_to image_tag("homefeedicon.png"), categories_path, id: "arima-icon" %>
     <%= link_to image_tag("imageupload.png", size: "22x20") + "  UPLOAD", new_question_path, id: "imageupload", class: "hidden-lg" %>
     <%= link_to image_tag("imageupload.png", size: "22x20") + "  UPLOAD", {remote: true, controller: "questions", action: "new_modal"}, id: "imageupload", class: "hidden-xs hidden-sm hidden-md" %>
     <% if user_signed_in? && current_user.username.present? %>
