@@ -273,7 +273,7 @@ class QuestionsController < ApplicationController
       GroupsQuestion.create(group_id: 7, question_id: @subquestion.id)
     else
       redirect_to categories_path
-      flash[:notice] = "The length of the question was too long. Please try again."
+      flash[:notice] = "The length of the title was too long. Please try again."
       return
     end
 
@@ -292,7 +292,7 @@ class QuestionsController < ApplicationController
       redirect_to question_path(@subquestion), flash: { share_modal: true }
     else
       redirect_to categories_path
-      flash[:notice] = "This Question has already been asked"
+      flash[:notice] = "This title has already been added"
     end
   end
 
